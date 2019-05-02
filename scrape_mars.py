@@ -98,7 +98,7 @@ def scrape():
     # Convert to HTML
     facts = df_facts.to_html()
     
-    print(facts)
+    #print(facts)
 
     # --Mars Hemispheres--
 
@@ -130,7 +130,7 @@ def scrape():
         
         hemisphere_image_urls.append(post)
         
-        browser.click_link_by_partial_text('Back')
+        browser.back()
         
     # Close browser window
     browser.quit()
